@@ -1,0 +1,23 @@
+The Grinch is the foulest creature you have ever seen. He is covered from head to toe with green hair that he never combs out of principle. He never takes a bath and he stinks to high heaven. His teeth are full of larvae and he resembles a grumpy crocodile. He is through and through evil and despises little kids. His heart is made of stone, he hates Christmas and the whole of Advent. Hence, he decided to steal Christmas this year.
+
+But stealing Christmas is no easy business. One needs a proper plan! With that in mind, the Grinch climbed to the highest peak of the mountain rising above his cave. There he began scheming whilst launching avalanches toward Whoville. Oh yes, that’s it. The gifts are what make Christmas special. All the gifts must be stolen. But how would one go about it?
+
+Naturally, the Grinch cannot possibly carry all the gifts himself. And Whoville is too far away to make several trips in one night. At that moment, the Grinch heard a distant bark. Oh yes, you are right, Max! We need a sleigh to carry all the stolen gifts. And Max, the Grinch’s only friend, shall pull them.
+
+The Grinch immediately began carrying out his devilish plan. If one dared to enter his cave, they would hear plenty of thumping, hissing, welding, and swearing. Max himself rather receded into the darkest corner of the cave without as much as sticking out his nose.
+
+Christmas is already peeking around the corner and the Grinch is running out of time. The sleigh is yet to be finished. Several important parts are missing, such as the bell, antlers for Max, and the largest bag Whoville has ever seen. These items must be assembled without any further delay. Thereby, the Grinch called Max and gave him a map and a list of parts that need to be gathered immediately. And if Max again goes to earth, as usual, the Grinch promised to cut off his tail.
+
+I have yet to describe to you, dear reader, what the Grinch’s cave truly looks like. Throughout the thirty-five years of his life, the beast has pierced the whole mountain with an abundance of passages and rooms in which he hoards his treasures. Or at least what he considers treasures. Thus, one can find there wildly scattered bones of animals that he ate or tortured, and various knick-knacks that he stole in the city, found in a rubbish dump or discovered while he was wandering in the hills.
+
+Will you help Max save his skin and instruct him how to collect all the necessary items as quickly as possible?
+Interface
+
+Your task is to implement the function std::list<Place> find_path(const Map &map) which finds the shortest walk such that you obtain at least one item of each kind. The walk must begin at map.start, end at map.end and a connection must exists between every two consecutive rooms of the walk. If there is no such a walk, return an empty list. The structure Map contains the following:
+
+    places: the total number of rooms,
+    start, end: the first, resp. last, room of the walk,
+    connections: a list of pairs of rooms describing the connections,
+    items: a list of lists, items[i] is a list of rooms in which the i-th item is placed.
+
+You can assume that the room numbers are always in the range 0 up to places - 1 (including).
